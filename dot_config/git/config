@@ -1,0 +1,29 @@
+[user]
+	name = Alexandre Dos Reis
+	email = alexandre@finishers.com
+[core]
+	ignorecase = false
+[alias]
+  cm = commit -m
+  st = status
+  br = branch 
+  co = checkout
+  p = push
+  l = pull
+	hist = log --pretty=format:\"%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)\" --graph --date=relative --decorate
+[pager]
+	branch = false
+[branch]
+  # When branching off a remote branch, automatically let the local branch track the remote branch
+  autosetupmerge = true
+[push]
+  # When pushing without giving a refspec, push the current branch to its upstream branch
+  default = simple 
+  autoSetupRemote = true
+[rerere]
+  # Enable the recording of resolved conflicts, so that identical hunks can be resolved automatically later on.
+  enabled = true
+[advice]
+	addIgnoredFile = false
+[safe]
+	directory = /Users/alex/.config/nvim

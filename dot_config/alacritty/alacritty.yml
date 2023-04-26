@@ -1,0 +1,83 @@
+window:
+  opacity: 0.95
+  padding:
+    x: 15
+    y: 15
+  dynamic_title: true
+  class:
+    instance: Alacritty
+    general: Alacritty
+  # Window decorations
+  # Setting this to false will result in window without borders and title bar.
+  decorations: none
+  startup_mode: Maximized
+  dynamic_title: true
+
+scrolling:
+  history: 1000
+  multiplier: 3
+
+font:
+  size: 15
+  # antialias: true
+  normal:
+    family: "Hack Nerd Font"
+  # family: "Meslo GS NF"
+
+key_bindings:
+  # https://github.com/alacritty/alacritty/issues/474#issuecomment-338803299
+  # https://stackoverflow.com/questions/72886868/alacritty-delete-line-with-cmd-backspace
+  # https://github.com/alacritty/alacritty/issues/985
+  # https://github.com/alacritty/alacritty/issues/146
+  # https://github.com/alacritty/alacritty/blob/master/docs/features.md
+  # https://github.com/alacritty/alacritty/wiki/Keyboard-mappings#general-quality-of-life-improvements
+  # "Shift + mouse selection" enable mac selection
+
+  # Ctrl+l isn't working inside Tmux...
+  - { key: L, mods: Control, chars: "clear\x0D" }
+
+  - { key: Left, mods: Alt, chars: "\x1bb" }
+  - { key: Right, mods: Alt, chars: "\x1bf" }
+  - { key: Left, mods: Alt|Shift, chars: "\x1b[1;4c" }
+  - { key: Right, mods: Alt|Shift, chars: "\x1b[1;4d" }
+
+  - { key: Up, mods: Shift, chars: "\x1b[1;2A" }
+  - { key: Down, mods: Shift, chars: "\x1b[1;2B" }
+
+  - { key: 76, mods: Alt|Shift, chars: "|" }
+  - { key: 23, mods: Alt, chars: "{" }
+  - { key: 23, mods: Alt|Shift, chars: "[" }
+  - { key: 27, mods: Alt, chars: "}" }
+  - { key: 27, mods: Alt|Shift, chars: "]" }
+  - { key: N, mods: Alt, chars: "~" }
+  - { key: 47, mods: Alt|Shift, chars: "\\" }
+
+alt_send_esc: false # This allow alt keys to work properly in neovim
+
+colors:
+  # Default colors
+  primary:
+    background: "0x08181E"
+    foreground: "0x839496"
+
+  # Normal colors
+  normal:
+    black: "0x073642"
+    red: "0xdc322f"
+    green: "0x859900"
+    yellow: "0xb58900"
+    blue: "0x268bd2"
+    magenta: "0xd33682"
+    cyan: "0x2aa198"
+    white: "0xeee8d5"
+
+  # Bright colors
+  bright:
+    black: "0x002b36"
+    red: "0xcb4b16"
+    green: "0x586e75"
+    yellow: "0x657b83"
+    blue: "0x839496"
+    magenta: "0x6c71c4"
+    cyan: "0x93a1a1"
+    white: "0xfdf6e3"
