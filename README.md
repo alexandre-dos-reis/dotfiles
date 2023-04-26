@@ -1,5 +1,12 @@
 # dot-files
 
+## Install
+
+This repository uses a tool called [chezmoi](https://www.chezmoi.io/quick-start) to manage dotfiles and configuration files.
+
+- install chezmoi on the new machine : `brew install chezmoi`
+- Fetch dotfiles and install them on the new machine: `chezmoi init --apply alexandre-dos-reis`
+
 ## Todo
 
 - See https://starship.rs/fr-FR/

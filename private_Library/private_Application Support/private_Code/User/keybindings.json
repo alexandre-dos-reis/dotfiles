@@ -1,0 +1,7 @@
+// Placer vos combinaisons de touches dans ce fichier pour remplacer les valeurs par défaut
+[
+    {
+        "key": "alt+1",
+        "command": "multiCommand.makeRoom"
+    }
+]

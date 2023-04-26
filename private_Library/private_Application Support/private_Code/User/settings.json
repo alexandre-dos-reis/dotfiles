@@ -1,0 +1,79 @@
+{
+  "workbench.colorTheme": "poimandres",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "editor.fontFamily": "Jetbrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.lineHeight": 20,
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.hidesExplorerArrows": true,
+
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": true,
+  "editor.renderWhitespace": "trailing",
+  "editor.linkedEditing": true,
+  "editor.occurrencesHighlight": false,
+  "editor.suggest.insertMode": "replace",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "files.autoSave": "afterDelay",
+  "explorer.autoReveal": true,
+  "explorer.confirmDragAndDrop": true,
+  "explorer.confirmDelete": true,
+  "explorer.confirmUndo": "default",
+  "workbench.tree.indent": 15,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.editor.enablePreview": true,
+  "emmet.triggerExpansionOnTab": true,
+  "editor.fontLigatures": true,
+  "editor.bracketPairColorization.enabled": true,
+  "scm.defaultViewMode": "tree",
+
+  // Vim preference
+  "editor.lineNumbers": "relative",
+  "editor.cursorStyle": "block",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.statusBarColorControl": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  //
+
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.makeRoom",
+      "sequence": [
+        "workbench.action.toggleSidebarVisibility",
+        "workbench.action.toggleActivityBarVisibility"
+      ]
+    }
+  ],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Problème avec Prettier
+  "files.saveConflictResolution": "overwriteFileOnDisk",
+
+  "eslint.lintTask.enable": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "totalTypeScript.hideAllTips": true,
+  "totalTypeScript.hideBasicTips": true,
+  "totalTypeScript.showTLDRTranslation": true,
+  "totalTypeScript.showFullTranslation": true,
+  "totalTypeScript.hiddenTips": ["passing-generics-to-types"],
+  "window.zoomLevel": 1,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f",
+    "editor.selectionBackground": "#717cb483"
+  }
+}
