@@ -10,8 +10,6 @@ prettier.setup {
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "json",
-    "markdown",
-    "mdx"
+    "json"
   }
 }
