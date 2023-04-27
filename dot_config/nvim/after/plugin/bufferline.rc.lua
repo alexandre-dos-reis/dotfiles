@@ -36,6 +36,13 @@ bufferline.setup({
     modified_selected = {
       fg = "#F2A8AF",
     },
+    duplicate = {
+      fg = '#657b83',
+      bg = '#002b36'
+    },
+    duplicate_selected = {
+      fg = '#fdf6e3',
+    }
   },
 })
 
