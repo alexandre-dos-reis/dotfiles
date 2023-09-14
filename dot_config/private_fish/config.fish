@@ -21,6 +21,7 @@ alias c "clear"
 alias f "~/bin/tmux-sessionizer"
 alias cht "~/bin/cht.sh"
 alias cm "chezmoi"
+alias t "tmux"
 
 # paths
 set -gx PATH bin $PATH
