@@ -12,6 +12,5 @@ else
   cmd="curl -s cht.sh/$selected~$query | less -R"
 fi
 
-
 tmux split-window -h bash -c "$cmd"
 

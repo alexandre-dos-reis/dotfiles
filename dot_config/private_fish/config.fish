@@ -15,13 +15,14 @@ set -g theme_hostname always
 
 # alias
 command -qv nvim && alias vim nvim
+alias t "tmux"
 alias ll "exa -l -g --icons"
 alias lla "ll -a"
 alias c "clear"
 alias f "~/bin/tmux-sessionizer"
 alias cht "~/bin/cht.sh"
 alias cm "chezmoi"
-alias t "tmux"
+alias cme "chezmoi edit --apply"
 
 # paths
 set -gx PATH bin $PATH
