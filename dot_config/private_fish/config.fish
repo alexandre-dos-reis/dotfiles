@@ -23,6 +23,7 @@ alias f "~/bin/tmux-sessionizer"
 alias cht "~/bin/cht.sh"
 alias cm "chezmoi"
 alias cme "chezmoi edit --apply"
+alias v "nvim"
 
 # paths
 set -gx PATH bin $PATH
