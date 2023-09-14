@@ -18,14 +18,18 @@ command -qv nvim && alias vim nvim
 alias ll "exa -l -g --icons"
 alias lla "ll -a"
 alias c "clear"
+alias f "~/bin/tmux-sessionizer"
+alias cht "~/bin/cht.sh"
+alias cm "chezmoi"
 
 # paths
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
+set -gx PATH ~/google-cloud-sdk $PATH
 
 # NodeJs
-set --universal nvm_default_version v16.18.1
+set --universal nvm_default_version v18.16.0
 
 # set PATH ~/.nvm/versions/node/v16.18.1/bin $PATH 
 # Come from https://github.com/fish-shell/fish-shell/issues/3023

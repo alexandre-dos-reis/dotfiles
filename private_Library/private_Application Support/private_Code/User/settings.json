@@ -5,7 +5,6 @@
   "editor.lineHeight": 20,
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.hidesExplorerArrows": true,
-
   "editor.minimap.enabled": false,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
@@ -27,7 +26,6 @@
   "editor.fontLigatures": true,
   "editor.bracketPairColorization.enabled": true,
   "scm.defaultViewMode": "tree",
-
   // Vim preference
   "editor.lineNumbers": "relative",
   "editor.cursorStyle": "block",
@@ -40,7 +38,6 @@
   "vim.statusBarColorControl": true,
   "editor.cursorSmoothCaretAnimation": "on",
   //
-
   "multiCommand.commands": [
     {
       "command": "multiCommand.makeRoom",
@@ -53,10 +50,8 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   // Problème avec Prettier
   "files.saveConflictResolution": "overwriteFileOnDisk",
-
   "eslint.lintTask.enable": true,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -71,9 +66,12 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.colorCustomizations": {
-    "statusBar.background": "#5f00af",
-    "statusBar.noFolderBackground": "#5f00af",
-    "statusBar.debuggingBackground": "#5f00af",
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f",
     "editor.selectionBackground": "#717cb483"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
