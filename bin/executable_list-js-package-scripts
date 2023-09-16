@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-FILE="$PWD/$1"
+FILE="$PWD/package.json"
 
 if test -f "$FILE"; then
   cat $FILE | jq ".scripts" | sed "1d" | sed -e '$ d'
+else
+  echo "No package.json found"
 fi
