@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+FILE="$PWD/$1"
+
+if test -f "$FILE"; then
+  cat $FILE | jq ".scripts" | sed "1d" | sed -e '$ d'
+fi
