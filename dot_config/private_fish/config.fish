@@ -17,8 +17,9 @@ set -g theme_hostname always
 command -qv nvim && alias vim nvim
 alias t "tmux"
 alias tk "tmux kill-session"
-alias ll "exa -l -g --icons"
-alias lla "ll -a"
+alias ll "eza -l -g --icons"
+alias lla "ll --all"
+alias llt "ll --tree"
 alias c "clear"
 alias f "~/bin/tmux-sessionizer"
 alias cs "~/bin/cht.sh"

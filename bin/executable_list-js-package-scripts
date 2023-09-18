@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-FILE="$PWD/package.json"
+FILE=${1:-"$PWD/package.json"}
 
 if test -f "$FILE"; then
   cat $FILE | jq ".scripts" | sed "1d" | sed -e '$ d'
