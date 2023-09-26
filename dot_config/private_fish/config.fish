@@ -4,7 +4,7 @@ set -gx TERM xterm-256color
 set -gx EDITOR nvim
 
 # Enable VI moves
-# fish_vi_key_bindings
+fish_vi_key_bindings
 
 # theme
 set -g theme_color_scheme terminal-dark
@@ -17,7 +17,7 @@ set -g theme_hostname always
 command -qv nvim && alias vim nvim
 alias t "tmux"
 alias tk "tmux kill-session"
-alias ll "eza -l -g --icons"
+alias ll "exa -l -g --icons"
 alias lla "ll --all"
 alias llt "ll --tree"
 alias c "clear"
@@ -31,12 +31,13 @@ alias v "nvim"
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
-set -gx PATH ~/google-cloud-sdk $PATH
+set -gx PATH ~/google-cloud-sdk/bin $PATH
+set -gx PATH /opt/homebrew/bin $PATH
 
 # NodeJs
 set --universal nvm_default_version v18.16.0
 
-# set PATH ~/.nvm/versions/node/v16.18.1/bin $PATH 
+# set PATH ~/.nvm/versions/node/v16.18.1/bin $PATH
 # Come from https://github.com/fish-shell/fish-shell/issues/3023
 # better solution here https://medium.com/@joshuacrass/nvm-on-mac-for-fish-users-e00af124c540
 
@@ -44,4 +45,3 @@ set --universal nvm_default_version v18.16.0
 set -gx PNPM_HOME "/Users/alexandre/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
-
