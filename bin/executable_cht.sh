@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-languages=$(echo "typescript javascript rust golang" | tr " " "\n")
+languages=$(echo "typescript javascript rust golang lua" | tr " " "\n")
 core_utils=$(ls /bin | tr " " "\n")
 selected=$(echo -e "$languages\n$core_utils" | fzf)
  
