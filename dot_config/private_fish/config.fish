@@ -26,7 +26,7 @@ alias cs "~/bin/cht.sh"
 alias cm "chezmoi"
 alias cme "chezmoi edit --apply"
 alias v "nvim"
-alias b "bat"
+alias b "bat -p"
 
 # paths
 set -gx PATH bin $PATH
