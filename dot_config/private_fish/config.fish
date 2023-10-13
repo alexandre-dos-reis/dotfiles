@@ -34,6 +34,7 @@ set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/google-cloud-sdk/bin $PATH
 set -gx PATH /opt/homebrew/bin $PATH
+set -gx PATH ~/.cargo/bin $PATH
 
 # NodeJs
 set --universal nvm_default_version v18.16.0
