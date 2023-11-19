@@ -1,0 +1,13 @@
+return {
+  {
+    "hrsh7th/nvim-cmp",
+    opts = function(_, opts)
+      local cmp = require("cmp")
+      opts.mapping = vim.tbl_deep_extend("force", opts.mapping, {
+        ["<C-i>"] = cmp.mapping.complete(),
+        ["<C-j>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
+        ["<C-k>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
+      })
+    end,
+  },
+}

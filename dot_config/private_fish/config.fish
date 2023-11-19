@@ -27,6 +27,8 @@ alias cm "chezmoi"
 alias cme "chezmoi edit --apply"
 alias v "nvim"
 alias b "bat -p"
+alias d "docker"
+alias dcp "docker compose"
 
 # paths
 set -gx PATH bin $PATH
