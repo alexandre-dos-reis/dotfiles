@@ -48,3 +48,4 @@ k.set("n", "<leader>tp", ":tabp<CR>")
 
 -- tmux-sessionizer
 k.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+k.set("n", "<C-w>", "<cmd>silent !tmux neww tmux-windownizer<CR>")
