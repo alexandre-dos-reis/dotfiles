@@ -69,7 +69,9 @@
     "statusBar.background": "#005f5f",
     "statusBar.noFolderBackground": "#005f5f",
     "statusBar.debuggingBackground": "#005f5f",
-    "editor.selectionBackground": "#717cb483"
+    "editor.selectionBackground": "#717cb483",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingForeground": "#ffffff"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
