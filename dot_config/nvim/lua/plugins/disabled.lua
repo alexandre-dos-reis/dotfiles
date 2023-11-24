@@ -9,4 +9,19 @@ return {
       return {}
     end,
   },
+  {
+    -- Conflict with git config
+    "gbprod/yanky.nvim",
+    keys = {
+      {
+        "<leader>gp",
+        false,
+      },
+      {
+
+        "<leader>gP",
+        false,
+      },
+    },
+  },
 }
