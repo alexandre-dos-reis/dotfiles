@@ -1,14 +1,19 @@
 return {
   "telescope.nvim",
   dependencies = {
+    {
+      "nvim-telescope/telescope-fzf-native.nvim",
+      build = "make",
+    },
     "nvim-telescope/telescope-file-browser.nvim",
   },
   keys = {
     {
-      "<leader>fs",
+      "<leader>ff",
       function()
-        local builtin = require("telescope.builtin")
-        builtin.live_grep()
+        require("telescope.builtin").find_files({
+          cwd = vim.loop.cwd(),
+        })
       end,
     },
     {
@@ -29,6 +34,13 @@ return {
             height = 40,
           },
         })
+      end,
+    },
+    {
+      "<leader>fs",
+      function()
+        local builtin = require("telescope.builtin")
+        builtin.live_grep()
       end,
     },
   },
