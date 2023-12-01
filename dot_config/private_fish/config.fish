@@ -13,23 +13,33 @@ set -g theme_display_user yes
 set -g theme_hide_hostname no
 set -g theme_hostname always
 
-# alias
+# Alias
 command -qv nvim && alias vim nvim
+alias v nvim
 alias t tmux
 alias tk "tmux kill-session"
 alias ll "exa -l -g --icons"
 alias lla "ll --all"
 alias llt "ll --tree"
 alias c clear
+alias b "bat -p"
+
+# Scripts alias
 alias f "~/bin/tmux-sessionizer"
 alias fw "~/bin/tmux-windownizer"
 alias cs "~/bin/cht.sh"
+
+# Chezmoi alias
 alias cm chezmoi
 alias cme "chezmoi edit --apply"
-alias v nvim
-alias b "bat -p"
+
+# Docker alias 
 alias d docker
 alias dcp "docker compose"
+
+# Fuzzy finder alias
+alias ff "fzf --preview 'bat --style=numbers --color=always {}'"
+alias ffn "ff | xargs nvim"
 
 # paths
 set -gx PATH bin $PATH
