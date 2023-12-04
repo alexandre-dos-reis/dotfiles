@@ -51,7 +51,7 @@ set -gx PATH ~/.cargo/bin $PATH
 set -gx PATH ~/go/bin $PATH
 
 # NodeJs
-set --universal nvm_default_version v18.16.0
+set --universal nvm_default_version v18.17.0
 
 # set PATH ~/.nvm/versions/node/v16.18.1/bin $PATH
 # Come from https://github.com/fish-shell/fish-shell/issues/3023
