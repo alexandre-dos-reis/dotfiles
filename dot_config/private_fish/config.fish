@@ -49,6 +49,7 @@ set -gx PATH ~/google-cloud-sdk/bin $PATH
 set -gx PATH /opt/homebrew/bin $PATH
 set -gx PATH ~/.cargo/bin $PATH
 set -gx PATH ~/go/bin $PATH
+set -gx PATH ~/Library/pnpm $PATH
 
 # NodeJs
 set --universal nvm_default_version v18.17.0
@@ -56,8 +57,3 @@ set --universal nvm_default_version v18.17.0
 # set PATH ~/.nvm/versions/node/v16.18.1/bin $PATH
 # Come from https://github.com/fish-shell/fish-shell/issues/3023
 # better solution here https://medium.com/@joshuacrass/nvm-on-mac-for-fish-users-e00af124c540
-
-# pnpm
-set -gx PNPM_HOME /Users/alexandre/Library/pnpm
-set -gx PATH "$PNPM_HOME" $PATH
-# pnpm end
