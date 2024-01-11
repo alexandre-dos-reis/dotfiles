@@ -17,6 +17,7 @@ set -g theme_hostname always
 command -qv nvim && alias vim nvim
 alias v nvim
 alias t tmux
+alias ta "tmux attach"
 alias tk "tmux kill-session"
 alias ll "exa -l -g --icons"
 alias lla "ll --all"
