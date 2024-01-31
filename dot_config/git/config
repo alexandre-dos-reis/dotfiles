@@ -27,3 +27,5 @@
 	addIgnoredFile = false
 [safe]
 	directory = /Users/alex/.config/nvim
+[credential]
+	helper = osxkeychain
