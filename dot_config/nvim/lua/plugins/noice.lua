@@ -9,7 +9,10 @@ return {
       opts = { skip = true },
     })
 
-    opts.presets.lsp_doc_border = true
+    opts.presets = {
+      lsp_doc_border = true,
+      bottom_search = false,
+    }
   end,
 }, {
   "rcarriga/nvim-notify",

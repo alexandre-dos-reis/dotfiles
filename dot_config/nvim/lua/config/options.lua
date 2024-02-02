@@ -45,3 +45,4 @@ o.swapfile = false
 -- split windows
 o.splitright = true
 o.splitbelow = true
+o.conceallevel = 1

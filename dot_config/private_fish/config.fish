@@ -42,6 +42,9 @@ alias dcp "docker compose"
 alias ff "fzf --preview 'bat --style=numbers --color=always {}'"
 alias ffn "ff | xargs nvim"
 
+# K8s
+alias k kubectl
+
 # paths
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
