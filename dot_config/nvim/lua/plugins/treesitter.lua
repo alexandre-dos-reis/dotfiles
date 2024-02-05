@@ -18,8 +18,8 @@ return {
       "php",
       "rust",
       "sql",
-      "markdown",
-      "markdown_inline",
+      -- "markdown",
+      -- "markdown_inline",
     },
     highlight = {
       enable = true,
@@ -34,6 +34,6 @@ return {
         mdx = "mdx",
       },
     })
-    vim.treesitter.language.register("markdown", "mdx")
+    -- vim.treesitter.language.register("markdown", "mdx")
   end,
 }
